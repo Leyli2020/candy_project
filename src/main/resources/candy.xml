@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<candies xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="candy.xsd">
+    <candy id="1">
+        <name>Konti</name>
+        <energy>500</energy>
+        <type>caramel</type>
+        <ingredients>
+            <ingredient>
+                <name>water</name>
+                <quantity>23</quantity>
+            </ingredient>
+            <ingredient>
+                <name>Sugar</name>
+                <quantity>50</quantity>
+            </ingredient>
+            <ingredient>
+                <name>milk chocolate</name>
+                <quantity>30</quantity>
+            </ingredient>
+        </ingredients>
+        <date>2022-03-19</date>
+        <value>
+            <proteins>2.5</proteins>
+            <fats>28</fats>
+            <carbohydrates>70</carbohydrates>
+        </value>
+        <production>Conti</production>
+    </candy>
+    <candy id="2">
+        <name>Bubble</name>
+        <energy>900</energy>
+        <type>chocolate</type>
+        <ingredients>
+            <ingredient>
+                <name>water</name>
+                <quantity>67</quantity>
+            </ingredient>
+            <ingredient>
+                <name>Sugar</name>
+                <quantity>80</quantity>
+            </ingredient>
+            <ingredient>
+                <name>milk chocolate</name>
+                <quantity>30</quantity>
+            </ingredient>
+        </ingredients>
+        <date>2022-03-20</date>
+        <value>
+            <proteins>3.5</proteins>
+            <fats>38</fats>
+            <carbohydrates>80</carbohydrates>
+        </value>
+        <production>Bubble</production>
+    </candy>
+    <candy id="3">
+        <name>Korovka</name>
+        <energy>500</energy>
+        <type>iris</type>
+        <ingredients>
+            <ingredient>
+                <name>water</name>
+                <quantity>67</quantity>
+            </ingredient>
+            <ingredient>
+                <name>Sugar</name>
+                <quantity>80</quantity>
+            </ingredient>
+            <ingredient>
+                <name>milk chocolate</name>
+                <quantity>30</quantity>
+            </ingredient>
+        </ingredients>
+        <date>2022-03-22</date>
+        <value>
+            <proteins>3.5</proteins>
+            <fats>38</fats>
+            <carbohydrates>62</carbohydrates>
+        </value>
+        <production>Roshen</production>
+    </candy>
+</candies>

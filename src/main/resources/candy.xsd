@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:element name="candies">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element ref="candy" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+
+    <xs:element name="candy">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="name" type="xs:string"/>
+                <xs:element ref="energy"/>
+                <xs:element ref="type"/>
+                <xs:element ref="ingredients"/>
+                <xs:element name="date" type="xs:date"/>
+                <xs:element ref="value"/>
+                <xs:element name="production" type="xs:string"/>
+            </xs:sequence>
+            <xs:attribute ref="id" use="required" />
+        </xs:complexType>
+    </xs:element>
+
+
+
+    <xs:element name="energy">
+        <xs:simpleType>
+            <xs:restriction base="xs:nonNegativeInteger">
+                <xs:maxInclusive value="1000"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+
+    <xs:element name="type">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="caramel"/>
+                <xs:enumeration value="chocolate"/>
+                <xs:enumeration value="iris"/>
+                <xs:enumeration value="with filling"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+
+    <xs:element name="ingredients">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="ingredient"  maxOccurs="5"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="ingredient">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="name" type="xs:string"/>
+                <xs:element name="quantity" type="xs:positiveInteger"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+
+    <xs:element name="value">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="proteins" type="xs:decimal"/>
+                <xs:element name="fats" type="xs:decimal"/>
+                <xs:element name="carbohydrates" type="xs:decimal"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+
+
+    <xs:attribute name="id" type="xs:positiveInteger"/>
+</xs:schema>
